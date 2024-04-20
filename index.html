@@ -1,37 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Carolyn Redford Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Khula&display=swap" rel="stylesheet">
-    <img src="/Images copy/background.png" alt="flowers" class="bg">
-    <div id="page-wrap"></div>
+    <title>Carolyn Redford Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">  
 </head>
+<div id="background">
 <body>
+
+    <!--<img src="/Images/background.png" alt="flowers" class="bg">
+    <div id="page-wrap"></div>-->
 
     <!--Homepage header section-->
 <header>
-    <nav class="navBar">
-        <a class="homeItem" href="index.html">Home</a>
-        <a class="aboutItem" href="aboutAndPort"><a href="aboutAndPort">About Me</a>
-        <a class="caseItem" href="caseStudiesContainer">Case Studies</a>
-    </nav>
-    <section>
+    <section class="pageTitle">
         <h1 id="headerName">Carolyn Redford</h1>
         <h3 id="headerJob">UX Designer</h3>
     </section>
+    <nav class="navBar">
+        <a class="homeItem" href="index.html">Home</a>
+        <a class="aboutItem" href="aboutAndPort">About Me</a>
+        <a class="caseItem" href="caseStudiesContainer">Case Studies</a>
+    </nav>
 </header>
-
+<!--Hamburger Menu-->
+        <nav class="hamNavBar">
+            <a class="homeItem" href="index.html">Home</a>
+            <a class="aboutItem" href="aboutAndPort">About Me</a>
+            <a class="caseItem" href="caseStudiesContainer">Case Studies</a>
+        </nav>
+    <button class="hamburger">
+        <!-- material icons https://material.io/resources/icons/ -->
+        <i class="menuIcon material-icons"><img id="hamButton" src="/Images/hamburgerMenu.png"></i>
+        <i class="closeIcon material-icons">close</i>
+    </button>
 <!-- About me -->
 <section>
 <div class="headerOne">
     <p>About Me</p>
 </div>
-<section>
+</section> 
 
 <section class="aboutAndPort"> 
+    <div id="portrait"> <img class="portrait" src="/Images/RedfordFamily-RMNP-3.JPEG" alt="portrait"> 
+    </div>
     <div class="aboutDescription">
         <p>
             Designing unique solutions for the 
@@ -42,26 +58,26 @@
             to designing a functional piece of art.
         </p>
     </div>
-    <div id="portrait"> <img class="portrait" src="/Images copy/RedfordFamily-RMNP-3.JPEG" alt="portrait"> 
-    </div>
 </section>
 
 <!-- Case Studies -->
-<p class="headerTwo">Case Studies</p> 
+<section>
+<div class="headerTwo"> 
+    <p>Case Studies</p> 
+</div>
 <div class="caseStudiesContainer">
 <section>
-    
         <div class="box">
             <p class="caseTitle">"Our Place" App Creation</p>
             <p class="description">Through user interviews and 
                 competitor analysis, a gap in the
                 travel accommodations market
                 was found and a lo-fi prototype was created.</p>
-            <img class="boxImage" src="/Images copy/final proto.png">
-            <img class="outsideArrow" src="/Images copy/arrow.png">
+            <img class="boxImage" src="/Images/final proto.png">
+            <img class="outsideArrow" src="/Images/arrow.png">
             <div>
                 <button class="buttonContainer">
-                    See More <img class="arrow" src="Images copy/arrow.png">
+                    See More <img class="arrow" src="Images/arrow.png">
                 </button>
             </div>
         </div>
@@ -74,16 +90,17 @@
                     Advocates, our team re-designed 
                     the website to simplify the header and
                     modernize the website.</p>
-                    <img class="boxImage" src="/Images copy/Hi-Fi.gif">
-                    <img class="outsideArrow" src="Images copy/arrow.png">
+                    <img class="boxImage" src="/Images/Hi-Fi.gif">
+                    <img class="outsideArrow" src="Images/arrow.png">
                 <div>
                     <button class="buttonContainer">
-                        See More <img class="arrow" src="Images copy/arrow.png">
+                        See More <img class="arrow" src="Images/arrow.png">
                     </button>
                 </div>
             </div>
         </section>
     </div>
+    </section>
 
 <!-- Lets Connect -->
 <div class="connectSection">
@@ -92,8 +109,8 @@
     <button class="button">Downloadable Resume</button>
     <button class="button">carolynredford4@gmail.com</button>
     <span class="socialButtons">
-        <button class="button"> <img id="socialButtons" src="Images copy/Github.png" atl="Github"> </button>
-        <button class="button"> <img id="socialButtons" src="Images copy/linkedIn.png" alt="LinkedIn"> </button>
+        <button class="button"> <img class="icons" src="Images/Github.png" atl="Github"> </button>
+        <button class="button"> <img class="icons" src="Images/linkedIn.png" alt="LinkedIn"> </button>
 </span>
 </section>
 </div>
@@ -101,13 +118,11 @@
 <!-- Footer -->
 <footer>
     <h1 id="footerName">Carolyn Redford</h1>
-    <section class="connect">
-        <button class="button">Downloadable Resume</button>
-        <button class="button">carolynredford4@gmail.com</button>
-        <span class="socialButtons">
-            <button class="button"> <img id="socialButtonGit" src="Images copy/Github.png" atl="Github"> </button>
-            <button class="button"> <img id="socialButtonLinked" src="Images copy/linkedIn.png" alt="LinkedIn"> </button>
-        </span>
+    <section class="footerConnect">
+        <button class="footerButton"><img class="footerIcons" src="/Images/resumeIcon.png"></button>
+        <button class="footerButton"><img id="iconEmail" src="/Images/emailIcon.png"></button>
+        <button class="footerButton"> <img class="footerIcons" src="Images/Github.png" atl="Github"> </button>
+            <button class="footerButton"> <img class="footerIcons" src="Images/linkedIn.png" alt="LinkedIn"> </button>
     </section>
     <div class="footerNav">
         <p class="homeItemFoot">Home</p>
@@ -115,8 +130,6 @@
         <p class="caseItemFoot">Case Studies</p>
     </div>
 </footer>
-
-<script src="/js/index.js"></script>
-
 </body>
+</div>
 </html>
