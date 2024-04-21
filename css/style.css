@@ -70,14 +70,14 @@ a:hover {
    color: #731702;
 }
 .hamburger {
-   /* position: fixed;
+   position: fixed;
    z-index: 100;
    top: 1rem;
    right: 1rem;
    padding: 4px;
    border: black solid 1px;
    background: white;
-   cursor: pointer; */
+   cursor: pointer; 
    visibility: hidden;
  }
  .closeIcon {
@@ -344,6 +344,7 @@ footer {
    border-radius: 10px;
    width: 74px;
    height: 74px;
+   cursor: pointer;
 }
 .footerNav {
    /* display: flex;
@@ -362,51 +363,78 @@ footer {
    margin:0;
 }
 
-
+/* Media Query */
 @media only screen and (max-width:600px) {
+   body,
+   html {
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 100vw;
+      overflow-x: hidden;
+   }
    .aboutAndPort {
       display: grid;
       grid-template-columns: 1fr;
    }
-   .navBar {
-      opacity: 0;
-   }
-   .hamburger {
-      position: fixed;
-      z-index: 100;
-      top: 3rem;
-      right: 3rem;
-      padding: 4px;
-      border-radius: 8%;
-      cursor: pointer;
-      height: 50px;
-      width: 50px;
-    }
-    .closeIcon {
-      display: none;
-    }
-    .hamNavBar {
-      position: fixed;
-      transform: translateY(-100%);
-      transition: transform 0.2s;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      z-index: 99;
-      background: black;
-      color: white;
-      list-style: none;
-      padding-top: 4rem;
-    }
-    #hamButton {
-      width: 50px;
-      height: 50px;
-    }
-    .showMenu {
-      transform: translateY(0);
-    }
-
+   /*Hamburger Navigation*/
+      .navBar {
+         opacity: 0;
+      }
+      .hamburger {
+         visibility: visible;
+         position: fixed;
+         z-index: 100;
+         top: 3rem;
+         right: 3rem;
+         padding: 4px;
+         border-radius: 8%;
+         background-color: #731702;
+         cursor: pointer;
+         height: 100px;
+         width: 100px;
+      }
+      .closeIcon {
+         display: none;
+      }
+      .hamNavBar {
+         position: fixed;
+         transform: translateY(-100%);
+         transition: transform 0.2s;
+         top: 0px;
+         left: 0;
+         right: 0;
+         bottom: 0;
+         z-index: 99;
+         background: #731702;
+         list-style: none;
+         padding-top: 4rem;
+         height: 400px;
+         display: grid;
+         grid-template-columns: 1fr;
+         justify-items: center;
+         border-radius: 8%;
+      }
+      .menuIcon {
+         font-family: "Khula";
+         font-size: 30px;
+         color: white;
+      }
+      .closeIcon {
+         font-family: "Khula";
+         font-size: 30px;
+         color: white;
+      }
+      .showMenu {
+         transform: translateY(0);
+      }
+      .homeItem,
+      .aboutItem,
+      .caseItem {
+         /*padding: 0px 25px 25px 0px;*/
+         font-family: "Khula";
+         color: white;
+         font-size: 48px;
+      }
    #portrait {
       padding-left: 50px;
    }
@@ -418,6 +446,7 @@ footer {
    .caseStudiesContainer {
       display: grid;
       grid-template-columns: 1fr;
+      max-width: 600px;
    }
    .connectSection {
       display: grid;
