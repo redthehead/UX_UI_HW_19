@@ -227,7 +227,8 @@ a:hover {
   font-size: 40px;
   color: black;
   width: 433px;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   opacity: 0;
   border-radius: 10px;
 }
@@ -246,10 +247,10 @@ a:hover {
   position: relative;
   bottom: 30px;
   top: 70px;
-  left: 180px;
+  left: 131px;
 }
 .outsideArrow:hover {
-   opacity: 0;
+   visibility: hidden;
 }
 
 /*Lets Connect*/
@@ -270,8 +271,10 @@ a:hover {
    padding: 14px;
    display: flex;
    flex-direction: column;
-   justify-content: center;
+   justify-items: center;
+   align-items: center;
    font: "Khula";
+   font-size: 20px;
    text-align: center;
    cursor: pointer;
 }
