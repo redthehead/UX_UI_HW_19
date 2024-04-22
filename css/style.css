@@ -299,10 +299,6 @@ a:hover {
    justify-content: space-around;
    cursor: pointer;
 }
-.icons {
-   height: 24px;
-   width: 24px;
-}
 
 /*Footer*/
 
@@ -331,25 +327,18 @@ footer {
    gap: 34px; */
    display: grid;
    grid-template-columns: 1fr 1fr;
-   gap: 34px;
+   gap: 15px;
    justify-items: end;
    align-items: center;
-
-}
-.footerIcons {
-   height: 44px;
-   width: 44px;
-}
-#iconEmail {
-   width: 28px;
 }
 .footerButton {
    background-color: #f1c84a;
+   color: black;
    border-radius: 10px;
-   width: 74px;
-   height: 74px;
+   padding: 14px;
    cursor: pointer;
 }
+
 .footerNav {
    /* display: flex;
    flex-direction: column;
